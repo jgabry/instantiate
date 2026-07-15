@@ -15,7 +15,7 @@ stan_package_compile(
   cpp_options = list(),
   stanc_options = list(),
   force_recompile = getOption("cmdstanr_force_recompile", default = FALSE),
-  threads = FALSE,
+  threads = NULL,
   ...
 )
 }
@@ -71,8 +71,9 @@ to model control compilation.}
 \item{force_recompile}{Argument to \code{cmdstanr::cmdstan_model()}
 to model control compilation.}
 
-\item{threads}{Argument to \code{cmdstanr::cmdstan_model()}
-to model control compilation.}
+\item{threads}{Deprecated on 2026-04-07 (version 0.2.3.9003).
+\code{cmdstanr::cmdstan_model()} no longer
+accepts a \code{threads} argument.}
 
 \item{...}{Other named arguments to \code{cmdstanr::cmdstan_model()}.}
 }
