@@ -38,7 +38,7 @@ important to follow these stages in order:
 1.  Install the R package [`CmdStanR`](https://mc-stan.org/cmdstanr/).
     [`CmdStanR`](https://mc-stan.org/cmdstanr/) is not on CRAN, so the
     recommended way to install it is
-    `install.packages("cmdstanr", repos = c("https://mc-stan.org/r-packages/", getOption("repos")))`.
+    `install.packages("cmdstanr", repos = c("https://stan-dev.r-universe.dev/", getOption("repos")))`.
 2.  Optional: set environment variables `CMDSTAN_INSTALL` and/or
     `CMDSTAN` to manage the
     [`CmdStan`](https://mc-stan.org/users/interfaces/cmdstan)
@@ -245,7 +245,7 @@ run_bernoulli_model <- function(y, ...) {
 ## Development
 
 1.  In your package `DESCRIPTION` file, list
-    <https://mc-stan.org/r-packages/> in the `Additional_repositories:`
+    <https://stan-dev.r-universe.dev/> in the `Additional_repositories:`
     field ([example in
     `brms`](https://github.com/paul-buerkner/brms/blob/5c09251daabd5416e3d47004cc6c62816dc53cfa/DESCRIPTION#L95-L96)).
     This step is only necessary while
@@ -254,7 +254,7 @@ run_bernoulli_model <- function(y, ...) {
 <!-- -->
 
     Additional_repositories:
-        https://mc-stan.org/r-packages/
+        https://stan-dev.r-universe.dev/
 
 2.  In your package `DESCRIPTION` and `NAMESPACE` files, import the
     `instantiate` package and function `stan_package_model()`.

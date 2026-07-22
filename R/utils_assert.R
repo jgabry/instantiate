@@ -118,7 +118,7 @@ stan_assert_cmdstanr <- function() {
         "The {cmdstanr} package is required in order to install",
         "CmdStan and run Stan models. Please install it manually using",
         "install.packages(pkgs = \"cmdstanr\",",
-        "repos = c(\"https://mc-stan.org/r-packages/\", getOption(\"repos\"))"
+        "repos = c(\"https://stan-dev.r-universe.dev/\", getOption(\"repos\"))"
       )
     ),
     error = function(e) {
